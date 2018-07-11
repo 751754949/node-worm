@@ -1,0 +1,1597 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>首页-国内领先的前端外包切图网站－切客网（qkhtml.com）</title>
+	<META Name="keywords" Content="切图网站，web前端开发，web前端html5，前端开发，html5，前端切图，divcss，响应式，切图网，微信html5开发，微场景，psd转html，响应式前端开发，手机切图">
+	<meta name="description" content="切客网（www.qkhtml.com）是国内领先的前端外包服务平台。我们的切图网站提供专业的高品质网页切图、移动端网页切图、微网站前端开发、响应式布局前端开发、psd转html/html5等业务。">
+	<link rel="stylesheet" href="http://qkhtml.com/Public/Home/css/public.css" />
+	<link rel="stylesheet" href="http://qkhtml.com/Public/Home/css/style.css" />
+	<link rel="stylesheet" href="http://qkhtml.com/Public/Home/css/b_style.css" />
+	<script type="text/javascript" src="http://qkhtml.com/Public/Home/js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="http://qkhtml.com/Public/Home/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="http://qkhtml.com/Public/Home/js/index.js"></script>
+	<script type="text/javascript" src="http://qkhtml.com/Public/Home/js/TweenMax.min.js"></script>
+	<script language="javascript" src="http://qkhtml.com/Public/Home/js/jquery.validate.js"></script>
+	<script language="javascript" src="http://qkhtml.com/Public/Home/js/validate_expand.js"></script>
+	<script type="text/javascript" src="http://qkhtml.com/Public/static/uploadify/jquery.uploadify.min.js"></script>
+	<link rel="shortcut icon" href="http://qkhtml.com/Public/Home/css/favicon.ico" type="image/x-icon" />
+	<script type="text/javascript">
+		$(document).ready(function () {
+			initValidator();
+			initValidator1();
+		});    
+	</script>
+
+	<script type="text/javascript" src="http://qkhtml.com/Public/Home/js/responsiveslides.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".main_visual").hover(function () {
+				$("#btn_prev,#btn_next").fadeIn()
+			}, function () {
+				$("#btn_prev,#btn_next").fadeOut()
+			})
+			$dragBln = false;
+			$(".main_image").touchSlider({
+				flexible: true,
+				speed: 500,
+				btn_prev: $("#btn_prev"),
+				btn_next: $("#btn_next"),
+				paging: $(".flicking_con a"),
+				counter: function (e) {
+					$(".flicking_con a").removeClass("on").eq(e.current - 1).addClass("on");
+				}
+			});
+			$(".main_image").bind("mousedown", function () {
+				$dragBln = false;
+			})
+			$(".main_image").bind("dragstart", function () {
+				$dragBln = true;
+			})
+			$(".main_image a").click(function () {
+				if ($dragBln) {
+					return false;
+				}
+			})
+			timer = setInterval(function () { $("#btn_next").click(); }, 4000);
+			$(".main_visual").hover(function () {
+				clearInterval(timer);
+			}, function () {
+				timer = setInterval(function () { $("#btn_next").click(); }, 4000);
+			})
+			$(".main_image").bind("touchstart", function () {
+				clearInterval(timer);
+			}).bind("touchend", function () {
+				timer = setInterval(function () { $("#btn_next").click(); }, 4000);
+			})
+		});
+	</script>
+
+</head>
+
+<body style="overflow-x: hidden;">
+	<!--header-->
+	<div class="headerWrap_wc clearfix">
+		<div class="header_wc w1200">
+			<div class="header">
+				<div class="logo fl">
+					<a href="http://qkhtml.com/index/index.html">
+						<img src="http://qkhtml.com/Public/Home/images/logo.png" />
+					</a>
+				</div>
+				<div class="order fr">
+					<a href="javascript:void(0);" class="cssBtn1">在线下单</a>
+				</div>
+				<div class="headlink fr">
+					<ul id="social" class="social">
+						<li class="slist">
+							<a class="sfocus weixin" href="javascript:void(0);"></a>
+							<div class="sqrcode_wrap" style="opacity: 0; top: 0px; display: none;">
+								<div class="sqrcode" href="javascript:void(0);">
+									<i class="arrow-up"></i>
+									<div class="sq_img">
+										<img src="http://qkhtml.com/Uploads/Picture/2016-04-20/thumb_130_0_571796dcd3195.jpg" />
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="slist">
+							<a class="sfocus qq" href="javascript:void(0);"></a>
+							<div class="sqrcode_wrap" style="opacity: 0; top: 0px; display: none;">
+								<div class="sqrcode" href="javascript:void(0);">
+									<i class="arrow-up"></i>
+									<div class="qq_img">
+										<a href="tencent://Message/?Uin=3168444267&amp;websiteName=q-zone.qq.com&amp;Menu=yes">
+											<img src="http://qkhtml.com/Public/Home/images/log_qq.png" />
+										</a>
+										<a href="tencent://Message/?Uin=501590073&amp;websiteName=q-zone.qq.com&amp;Menu=yes">
+											<img src="http://qkhtml.com/Public/Home/images/log_qq.png" />
+										</a>
+										<a href="tencent://Message/?Uin=181813369&amp;websiteName=q-zone.qq.com&amp;Menu=yes">
+											<img src="http://qkhtml.com/Public/Home/images/log_qq.png" />
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="slist">
+							<a class="sfocus dianhua" href="javascript:void(0);"></a>
+							<div class="sqrcode_wrap" style="opacity: 0; top: 0px; display: none;">
+								<div class="sqrcode" href="javascript:void(0);">
+									<i class="arrow-up"></i>
+									<div class="dh">
+										<p>
+											<b>值班电话：</b>
+											<span>0931-2235045</span>
+										</p>
+										<p>
+											<b>手机专线：</b>
+											<span>139 1991 6960</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="nav fr">
+					<ul>
+						<li>
+							<a href="/Index.html" class="cur">首页</a>
+						</li>
+						<li>
+							<a href="/Service.html">服务</a>
+						</li>
+						<li>
+							<a href="/Pcase.html">案例</a>
+						</li>
+						<!--<li><a href="/Lesson.html" >教程</a></li>-->
+						<li>
+							<a href="/Effects.html">特效</a>
+						</li>
+						<li>
+							<a href="/Question.html">问题</a>
+						</li>
+						<li>
+							<a href="/About.html">关于</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--在线下单弹出-->
+	<div id="TB_overlayBG"></div>
+	<div class="cssOlContent cssOlContent1">
+		<div class="cssCo cssCo1" style="display: block;">
+			<div class="orderBox">
+				<div class="box_tb">
+					<h2>在线下单</h2>
+				</div>
+				<div class="box_ml">
+					<div class="box_mlfl fl">
+						<img src="http://qkhtml.com/Public/Home/temp/pic19.png" />
+					</div>
+					<div class="box_mlfr fl">
+						<p class="taobao">淘宝网拍付下单
+							<b>（拍付下单之后请及时联系客服排单）</b>
+						</p>
+						<p>
+							店铺地址
+							<a href="https://sminer.taobao.com/" target="_blank">https://sminer.taobao.com/</a>
+						</p>
+						<p>
+							拍付链接
+							<a href="http://t.cn/R34uWQU" target="_blank">http://t.cn/R34uWQU</a>
+						</p>
+					</div>
+				</div>
+				<!--<div class="box_bm box_ml">
+				<div class="box_mlfl fl"><img src="/Public/Home/temp/pic20.png"/></div>
+				<div class="box_mlfr fl">
+					<p class="taobao">猪八戒网雇佣下单 <b>（雇佣下单之后请及时联系客服排单）</b></p>
+					<p>
+						店铺地址    <a href="http://shop.zhubajie.com/4498561/" target="_blank">http://shop.zhubajie.com/4498561/</a>
+					</p>
+					<p>
+						雇佣链接   <a href="http://task.zhubajie.com/buy/index-uid-4498561.html" target="_blank">http://task.zhubajie.com/buy/index-uid-4498561.html</a>
+					</p>
+				</div>
+			</div>-->
+			</div>
+
+		</div>
+		<div class="closeCo">
+			<a href="javascript:void(0)" class="guangbi">
+				<img src="http://qkhtml.com/Public/Home/images/close.png" />
+			</a>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="content">
+
+		<header>
+			<div class="bd">
+				<div class="logowap">
+					<a href="/index/index.html">
+						<img src="http://qkhtml.com/Public/Home/images/logo.png" />
+					</a>
+				</div>
+
+				<div class="frwap fr">
+					<div class="order fr">
+						<span class="cssBtn1">
+							<a href="#">在线下单</a>
+						</span>
+					</div>
+					<a href="javascript:;" class="navbt"></a>
+				</div>
+			</div>
+		</header>
+
+		<div class="main_visual">
+			<div class="flicking_con">
+				<div class="flicking_inner">
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+				</div>
+			</div>
+			<div class="main_image">
+				<ul>
+					<li>
+						<span class="img_1" style="background: url(/Uploads/Picture/2018-05-16/5afb8569c04f9.jpg) center top no-repeat"></span>
+					</li>
+					<li>
+						<span class="img_1" style="background: url(/Uploads/Picture/2015-11-05/563afb4385f14.jpg) center top no-repeat"></span>
+					</li>
+					<li>
+						<span class="img_1" style="background: url(/Uploads/Picture/2018-05-16/5afb8f3ae5218.jpg) center top no-repeat"></span>
+					</li>
+				</ul>
+				<a href="javascript:;" id="btn_prev"></a>
+				<a href="javascript:;" id="btn_next"></a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+		<!--服务项目-->
+		<div class="serviceWrap_wc clearfix">
+			<div class="service_wc w1200">
+				<div class="service">
+					<ul id="service" class="serQuery">
+						<li class="serLi">
+							<div class="serWrap" style="top: 0px;">
+								<a href="/service/index/id/1.html">
+									<div class="serIco serIco1"></div>
+									<div class="serIntro">PSD/JPG/AI转HTML</div>
+									<div class="serLink">
+										高质量DIVCSS前端切图
+									</div>
+								</a>
+							</div>
+							<div class="ser_bg">
+								<img src="http://qkhtml.com/Public/Home/images/bg_yy.png" />
+							</div>
+						</li>
+						<li class="serLi">
+							<div class="serWrap" style="top: 0px;">
+								<a href="/service/index/id/2.html">
+									<div class="serIco serIco2"></div>
+									<div class="serIntro">手机/微网站前端切图</div>
+									<div class="serLink">
+										移动端HTML5前端切图
+									</div>
+								</a>
+							</div>
+							<div class="ser_bg">
+								<img src="http://qkhtml.com/Public/Home/images/bg_yy.png" />
+							</div>
+						</li>
+						<li class="serLi">
+							<div class="serWrap" style="top: 0px;">
+								<a href="/service/index/id/3.html">
+									<div class="serIco serIco3"></div>
+									<div class="serIntro">纯手写JS/JQuery效果定制</div>
+									<div class="serLink">
+										JS/JQuery效果定制
+									</div>
+								</a>
+							</div>
+							<div class="ser_bg">
+								<img src="http://qkhtml.com/Public/Home/images/bg_yy.png" />
+							</div>
+						</li>
+						<li class="serLi" style="margin-right: 0;">
+							<div class="serWrap" style="top: 0px;">
+								<a href="/service/index/id/4.html">
+									<div class="serIco serIco4"></div>
+									<div class="serIntro">网站UI设计/软件界面设计</div>
+									<div class="serLink">
+										UI及用户体验设计
+									</div>
+								</a>
+							</div>
+							<div class="ser_bg">
+								<img src="http://qkhtml.com/Public/Home/images/bg_yy.png" />
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				<div class="service_wap">
+					<ul>
+						<li class="li1">
+							<a href="/service/index/id/1.html">
+								<span></span>
+								PC端切图
+							</a>
+						</li>
+						<li class="li2">
+							<a href="/service/index/id/2.html">
+								<span></span>
+								手机H5切图
+							</a>
+						</li>
+						<li class="li3">
+							<a href="/service/index/id/3.html">
+								<span></span>
+								JS效果定制
+							</a>
+						</li>
+						<li class="li4">
+							<a href="/service/index/id/4.html">
+								<span></span>
+								UI设计
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--container-->
+		<div class="containerWrap_wc clearfix">
+			<div class="container_wc w1200">
+				<div class="contain">
+					<!--正在进行-->
+					<div class="ongoing fl">
+						<div class="ongoing_nav">
+							<h2>
+								<img src="/Public/Home/images/ico2.png" />正在进行</h2>
+						</div>
+						<div class="ongoing_con">
+							<div class="ong_linav">
+								<span class="nav_span1">编号</span>
+								<span class="nav_span2">名称</span>
+								<span class="nav_span3">进度</span>
+								<span class="nav_span4">详细</span>
+							</div>
+							<div class="txtScroll-top">
+								<div class="bd">
+									<ul class="infoList">
+										<li>
+											<div class="ong_con">
+												<span class="con_sapn1">201805183</span>
+												<span class="con_sapn2">Jabra</span>
+												<span class="con_sapn3">
+													<div class="wanche">完成
+														<b>100%</b>
+													</div>
+													<div class="jindu">
+														<img src='http://qkhtml.com/Public/Home/images/pic1.jpg' />
+														<img src='http://qkhtml.com/Public/Home/images/pic1.jpg' />
+														<img src='http://qkhtml.com/Public/Home/images/pic1.jpg' />
+														<img src='http://qkhtml.com/Public/Home/images/pic1.jpg' />
+														<img src='http://qkhtml.com/Public/Home/images/pic1.jpg' />
+														<img src='http://qkhtml.com/Public/Home/images/pic1.jpg' />
+														<img src='http://qkhtml.com/Public/Home/images/pic1.jpg' />
+														<img src='http://qkhtml.com/Public/Home/images/pic1.jpg' />
+														<img src='http://qkhtml.com/Public/Home/images/pic1.jpg' />
+														<img src='http://qkhtml.com/Public/Home/images/pic1.jpg' /> </div>
+												</span>
+												<span class="con_sapn4">
+													<a href="/Index/nowcon/id/165.html" target="_blank">查看详细</a>
+												</span>
+												<span class="con_sapn5">
+													<a href="#">>></a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<div class="ong_con">
+												<span class="con_sapn1">201805189</span>
+												<span class="con_sapn2">福建工程学校中文Wap</span>
+												<span class="con_sapn3">
+													<div class="wanche">完成
+														<b>100%</b>
+													</div>
+													<div class="jindu">
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' /> </div>
+												</span>
+												<span class="con_sapn4">
+													<a href="/Index/nowcon/id/164.html" target="_blank">查看详细</a>
+												</span>
+												<span class="con_sapn5">
+													<a href="#">>></a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<div class="ong_con">
+												<span class="con_sapn1">201805184</span>
+												<span class="con_sapn2">福建工程学院-英文版-PC</span>
+												<span class="con_sapn3">
+													<div class="wanche">完成
+														<b>100%</b>
+													</div>
+													<div class="jindu">
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' /> </div>
+												</span>
+												<span class="con_sapn4">
+													<a href="/Index/nowcon/id/163.html" target="_blank">查看详细</a>
+												</span>
+												<span class="con_sapn5">
+													<a href="#">>></a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<div class="ong_con">
+												<span class="con_sapn1">201805185</span>
+												<span class="con_sapn2">西部健康网</span>
+												<span class="con_sapn3">
+													<div class="wanche">完成
+														<b>100%</b>
+													</div>
+													<div class="jindu">
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' /> </div>
+												</span>
+												<span class="con_sapn4">
+													<a href="/Index/nowcon/id/162.html" target="_blank">查看详细</a>
+												</span>
+												<span class="con_sapn5">
+													<a href="#">>></a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<div class="ong_con">
+												<span class="con_sapn1">201805182</span>
+												<span class="con_sapn2">树袋龙-pc版</span>
+												<span class="con_sapn3">
+													<div class="wanche">完成
+														<b>100%</b>
+													</div>
+													<div class="jindu">
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' /> </div>
+												</span>
+												<span class="con_sapn4">
+													<a href="/Index/nowcon/id/160.html" target="_blank">查看详细</a>
+												</span>
+												<span class="con_sapn5">
+													<a href="#">>></a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<div class="ong_con">
+												<span class="con_sapn1">201805169</span>
+												<span class="con_sapn2">快云平台-普通用户-PC</span>
+												<span class="con_sapn3">
+													<div class="wanche">完成
+														<b>100%</b>
+													</div>
+													<div class="jindu">
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' /> </div>
+												</span>
+												<span class="con_sapn4">
+													<a href="/Index/nowcon/id/158.html" target="_blank">查看详细</a>
+												</span>
+												<span class="con_sapn5">
+													<a href="#">>></a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<div class="ong_con">
+												<span class="con_sapn1">201805168</span>
+												<span class="con_sapn2">快云平台-卡商用户-PC</span>
+												<span class="con_sapn3">
+													<div class="wanche">完成
+														<b>100%</b>
+													</div>
+													<div class="jindu">
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' /> </div>
+												</span>
+												<span class="con_sapn4">
+													<a href="/Index/nowcon/id/157.html" target="_blank">查看详细</a>
+												</span>
+												<span class="con_sapn5">
+													<a href="#">>></a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<div class="ong_con">
+												<span class="con_sapn1">201805163</span>
+												<span class="con_sapn2">九三学社-pc版</span>
+												<span class="con_sapn3">
+													<div class="wanche">完成
+														<b>100%</b>
+													</div>
+													<div class="jindu">
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' /> </div>
+												</span>
+												<span class="con_sapn4">
+													<a href="/Index/nowcon/id/156.html" target="_blank">查看详细</a>
+												</span>
+												<span class="con_sapn5">
+													<a href="#">>></a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<div class="ong_con">
+												<span class="con_sapn1">201805166</span>
+												<span class="con_sapn2">金鼎安全印制-pc版</span>
+												<span class="con_sapn3">
+													<div class="wanche">完成
+														<b>100%</b>
+													</div>
+													<div class="jindu">
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' /> </div>
+												</span>
+												<span class="con_sapn4">
+													<a href="/Index/nowcon/id/155.html" target="_blank">查看详细</a>
+												</span>
+												<span class="con_sapn5">
+													<a href="#">>></a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<div class="ong_con">
+												<span class="con_sapn1">201805165</span>
+												<span class="con_sapn2">福建工程学院-中文pc版</span>
+												<span class="con_sapn3">
+													<div class="wanche">完成
+														<b>100%</b>
+													</div>
+													<div class="jindu">
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' /> </div>
+												</span>
+												<span class="con_sapn4">
+													<a href="/Index/nowcon/id/154.html" target="_blank">查看详细</a>
+												</span>
+												<span class="con_sapn5">
+													<a href="#">>></a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<div class="ong_con">
+												<span class="con_sapn1">201708122</span>
+												<span class="con_sapn2">华中科大教师个人主页理科Pc英文</span>
+												<span class="con_sapn3">
+													<div class="wanche">完成
+														<b>100%</b>
+													</div>
+													<div class="jindu">
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' />
+														<img src='/Public/Home/images/pic1.jpg' /> </div>
+												</span>
+												<span class="con_sapn4">
+													<a href="/Index/nowcon/id/152.html" target="_blank">查看详细</a>
+												</span>
+												<span class="con_sapn5">
+													<a href="#">>></a>
+												</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--container-fl-->
+					<div class="qttool fr">
+						<!--切图工具-->
+						<div class="tool">
+							<div class="ongoing_nav">
+								<h2>
+									<img src="/Public/Home/images/ico2.png" />切图工具</h2>
+							</div>
+							<div class="tool_con">
+								<ul>
+									<li>
+										<a href="http://3.xp510.com:801/xp2011/PhotoshopCC_CHS_lite.zip" target="_blank">
+											<div class="tool_img">
+												<img src="/Uploads/Picture/2015-11-05/563af07b394fb.png" />
+											</div>
+											<p>Photoshop</p>
+										</a>
+									</li>
+									<li>
+										<a href="http://dlsw.baidu.com/sw-search-sp/soft/7b/24405/Dreamweaver8-chs_V8.0.0.2766.1393326223.exe" target="_blank">
+											<div class="tool_img">
+												<img src="/Uploads/Picture/2015-11-09/56403645a2be1.png" />
+											</div>
+											<p>Dreamweaver</p>
+										</a>
+									</li>
+									<li>
+										<a href="http://ivy.pconline.com.cn/adpuba/click?adid=361731&id=pc.xz.rjxz.xinxi.zz1.&__uuid=10220796" target="_blank">
+											<div class="tool_img">
+												<img src="/Uploads/Picture/2015-11-09/5640365d69449.png" />
+											</div>
+											<p>Fireworks</p>
+										</a>
+									</li>
+									<li>
+										<a href="http://download.dcloud.net.cn/HBuilder.6.7.1.windows.zip" target="_blank">
+											<div class="tool_img">
+												<img src="/Uploads/Picture/2015-11-09/564036772777a.png" />
+											</div>
+											<p>HBuilder</p>
+										</a>
+									</li>
+									<li>
+										<a href="http://leweicn.onlinedown.net/down/WebStorm-11.0.3.zip" target="_blank">
+											<div class="tool_img">
+												<img src="/Uploads/Picture/2015-11-09/5640369376e34.png" />
+											</div>
+											<p>WebStorm</p>
+										</a>
+									</li>
+									<li>
+										<a href="http://dlsw.baidu.com/sw-search-sp/soft/7f/14886/install-ietester-v0.5.4.1416988183.exe" target="_blank">
+											<div class="tool_img">
+												<img src="/Uploads/Picture/2015-11-09/564036bfc1738.png" />
+											</div>
+											<p>IETester</p>
+										</a>
+									</li>
+									<li>
+										<a href="http://dlsw.baidu.com/sw-search-sp/soft/05/12876/epp_V4.0.0.395_setup.1441769341.exe" target="_blank">
+											<div class="tool_img">
+												<img src="/Uploads/Picture/2015-11-09/564036d486479.png" />
+											</div>
+											<p>EditPlus</p>
+										</a>
+									</li>
+									<li>
+										<a href="http://dlsw.baidu.com/sw-search-sp/soft/f5/15554/Sublime_Text_2.0.2_Setup.exe?version=3130358218" target="_blank">
+											<div class="tool_img">
+												<img src="/Uploads/Picture/2015-11-09/564037017ed55.png" />
+											</div>
+											<p>Sublime Text</p>
+										</a>
+									</li>
+									<li>
+										<a href="http://dlsw.baidu.com/sw-search-sp/soft/ff/13432/FileZilla_3.11.0.2_setup.1437123900.exe" target="_blank">
+											<div class="tool_img">
+												<img src="/Uploads/Picture/2015-11-09/564037197a874.png" />
+											</div>
+											<p>FileZilla</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--切图教程-->
+						<div class="Course">
+							<div class="ongoing_nav">
+								<h2>
+									<img src="/Public/Home/images/ico2.png" />最新特效</h2>
+								<!--<a href="/lesson/index.html">更多>></a>-->
+							</div>
+							<div id="slideBox" class="course_ml slideBox">
+								<div class="hd">
+									<ul>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="bd">
+									<ul>
+										<li>
+											<a href="/Effects/detail/id/527.html" target="_blank">
+												<img src="/Uploads/Picture/2018-06-28/thumb_295_0_5b349fb49f55a.png" />
+												<div class="course_bg">带点击动画特效的CSS3单选框和复选框</div>
+											</a>
+										</li>
+										<li>
+											<a href="/Effects/detail/id/526.html" target="_blank">
+												<img src="/Uploads/Picture/2018-06-27/thumb_295_0_5b335d5f2883a.jpg" />
+												<div class="course_bg">12种炫酷汉堡包图标按钮变形动画特效</div>
+											</a>
+										</li>
+										<li>
+											<a href="/Effects/detail/id/525.html" target="_blank">
+												<img src="/Uploads/Picture/2018-06-27/thumb_295_0_5b3343cdb5039.jpg" />
+												<div class="course_bg">jquery图片和pdf文件预览插件</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="course_bo">
+								<ul>
+									<li>
+										<a href="/Effects/detail/id/524.html" target="_blank">
+											<div class="fl">bootstrap4-input数值微调插件</div>
+											<span class="fr">06/27</span>
+										</a>
+									</li>
+									<li>
+										<a href="/Effects/detail/id/523.html" target="_blank">
+											<div class="fl">移动端裁剪图片上传头像代码</div>
+											<span class="fr">06/27</span>
+										</a>
+									</li>
+									<li>
+										<a href="/Effects/detail/id/522.html" target="_blank">
+											<div class="fl">jquery提示框，弹框，确认框插件适用于移动端</div>
+											<span class="fr">06/26</span>
+										</a>
+									</li>
+									<li>
+										<a href="/Effects/detail/id/521.html" target="_blank">
+											<div class="fl">垂直图片轮播-jqueryCleanslider</div>
+											<span class="fr">06/26</span>
+										</a>
+									</li>
+									<li>
+										<a href="/Effects/detail/id/520.html" target="_blank">
+											<div class="fl">svg和jquery实现连线功能</div>
+											<span class="fr">06/25</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="course_box">
+								<ul>
+									<li>
+										<a href="/Effects/detail/id/527.html" target="_blank">
+											<div class="cbox_img">
+												<img src="/Uploads/Picture/2018-06-28/thumb_288_0_5b349fb49f55a.png" />
+											</div>
+											<div class="less_bm">带点击动画特效的CSS3单选框和复选框</div>
+										</a>
+									</li>
+									<li>
+										<a href="/Effects/detail/id/526.html" target="_blank">
+											<div class="cbox_img">
+												<img src="/Uploads/Picture/2018-06-27/thumb_288_0_5b335d5f2883a.jpg" />
+											</div>
+											<div class="less_bm">12种炫酷汉堡包图标按钮变形动画特效</div>
+										</a>
+									</li>
+									<li>
+										<a href="/Effects/detail/id/525.html" target="_blank">
+											<div class="cbox_img">
+												<img src="/Uploads/Picture/2018-06-27/thumb_288_0_5b3343cdb5039.jpg" />
+											</div>
+											<div class="less_bm">jquery图片和pdf文件预览插件</div>
+										</a>
+									</li>
+									<li>
+										<a href="/Effects/detail/id/524.html" target="_blank">
+											<div class="cbox_img">
+												<img src="/Uploads/Picture/2018-06-27/thumb_288_0_5b32f7a082cf4.jpg" />
+											</div>
+											<div class="less_bm">bootstrap4-input数值微调插件</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<!--contain1-->
+				<div class="contain1">
+					<!--典型案例-->
+					<div class="case fl">
+						<div class="ongoing_nav">
+							<h2>
+								<img src="/Public/Home/images/ico2.png" />典型案例</h2>
+							<a href="/pcase/index.html">更多>></a>
+						</div>
+						<div class="case_con">
+							<ul class="case_conul">
+								<li>
+									<a href="/pcase/detail/id/336.html" target="_blank">
+										<div class="plugthumb">
+											<div class="tp">
+												<figure class="effect-bubba">
+													<img class="lazy" src="/Uploads/Picture/2018-05-16/5afbf91041099.png" alt="" style="display: block;">
+													<figcaption>
+														<p>
+															<img src="/Public/Home/images/ico6.png" /> </p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="bm">
+												<span class="fl">福建工程学院中文-PC版</span>
+												<b class="fr">
+													<img src="/Public/Home/images/ico5.png" />804</b>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="/pcase/detail/id/313.html" target="_blank">
+										<div class="plugthumb">
+											<div class="tp">
+												<figure class="effect-bubba">
+													<img class="lazy" src="/Uploads/Picture/2017-10-12/59dedc28c4c69.jpg" alt="" style="display: block;">
+													<figcaption>
+														<p>
+															<img src="/Public/Home/images/ico6.png" /> </p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="bm">
+												<span class="fl">华中科大教师个人主页（医学）-中文版</span>
+												<b class="fr">
+													<img src="/Public/Home/images/ico5.png" />1086</b>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li style="margin-right: 0;">
+									<a href="/pcase/detail/id/306.html" target="_blank">
+										<div class="plugthumb">
+											<div class="tp">
+												<figure class="effect-bubba">
+													<img class="lazy" src="/Uploads/Picture/2017-08-02/598176e587ff0.jpg" alt="" style="display: block;">
+													<figcaption>
+														<p>
+															<img src="/Public/Home/images/ico6.png" /> </p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="bm">
+												<span class="fl">ZWCAD栏目</span>
+												<b class="fr">
+													<img src="/Public/Home/images/ico5.png" />775</b>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="/pcase/detail/id/292.html" target="_blank">
+										<div class="plugthumb">
+											<div class="tp">
+												<figure class="effect-bubba">
+													<img class="lazy" src="/Uploads/Picture/2017-06-21/5949cae63a36d.jpg" alt="" style="display: block;">
+													<figcaption>
+														<p>
+															<img src="/Public/Home/images/ico6.png" /> </p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="bm">
+												<span class="fl">盐城公安信息网_首页</span>
+												<b class="fr">
+													<img src="/Public/Home/images/ico5.png" />1316</b>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="/pcase/detail/id/287.html" target="_blank">
+										<div class="plugthumb">
+											<div class="tp">
+												<figure class="effect-bubba">
+													<img class="lazy" src="/Uploads/Picture/2017-06-20/5948e18de4efa.png" alt="" style="display: block;">
+													<figcaption>
+														<p>
+															<img src="/Public/Home/images/ico6.png" /> </p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="bm">
+												<span class="fl">岭南国际教育中心</span>
+												<b class="fr">
+													<img src="/Public/Home/images/ico5.png" />732</b>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li style="margin-right: 0;">
+									<a href="/pcase/detail/id/278.html" target="_blank">
+										<div class="plugthumb">
+											<div class="tp">
+												<figure class="effect-bubba">
+													<img class="lazy" src="/Uploads/Picture/2017-06-20/5948e22db34b6.png" alt="" style="display: block;">
+													<figcaption>
+														<p>
+															<img src="/Public/Home/images/ico6.png" /> </p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="bm">
+												<span class="fl">中国人民公安大学英文PC端</span>
+												<b class="fr">
+													<img src="/Public/Home/images/ico5.png" />870</b>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="/pcase/detail/id/250.html" target="_blank">
+										<div class="plugthumb">
+											<div class="tp">
+												<figure class="effect-bubba">
+													<img class="lazy" src="/Uploads/Picture/2016-07-18/578ca991ea8e4.jpg" alt="" style="display: block;">
+													<figcaption>
+														<p>
+															<img src="/Public/Home/images/ico6.png" /> </p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="bm">
+												<span class="fl">北京乐视集团新官网改版开发</span>
+												<b class="fr">
+													<img src="/Public/Home/images/ico5.png" />2877</b>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="/pcase/detail/id/355.html" target="_blank">
+										<div class="plugthumb">
+											<div class="tp">
+												<figure class="effect-bubba">
+													<img class="lazy" src="/Uploads/Picture/2018-06-22/5b2ca50263f7d.jpg" alt="" style="display: block;">
+													<figcaption>
+														<p>
+															<img src="/Public/Home/images/ico6.png" /> </p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="bm">
+												<span class="fl">杭州承兴门窗有限公司-WAP</span>
+												<b class="fr">
+													<img src="/Public/Home/images/ico5.png" />60</b>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li style="margin-right: 0;">
+									<a href="/pcase/detail/id/354.html" target="_blank">
+										<div class="plugthumb">
+											<div class="tp">
+												<figure class="effect-bubba">
+													<img class="lazy" src="/Uploads/Picture/2018-06-22/5b2ca54dc2655.jpg" alt="" style="display: block;">
+													<figcaption>
+														<p>
+															<img src="/Public/Home/images/ico6.png" /> </p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="bm">
+												<span class="fl">杭州承兴门窗有限公司-PC</span>
+												<b class="fr">
+													<img src="/Public/Home/images/ico5.png" />59</b>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--常见问题-->
+					<div class="problem fr">
+						<div class="ongoing_nav">
+							<h2>
+								<img src="/Public/Home/images/ico2.png" />常见问题</h2>
+							<a href="/question/index.html">更多>></a>
+						</div>
+						<div class="problem_com">
+							<ul>
+								<li>
+									<div class="pro_tb">
+										<i class="ques">Q</i>
+										<b>你们切图的质量以及效果如何？</b>
+									</div>
+									<div class="pro_bm">
+										<i class="anse">A</i>
+										<b>我们的切图质量您可以在案例中心看案例效果，我们这里的前端工程师均是程序员出身，拥有着至少5年以上的前端开发经验。</b>
+									</div>
+								</li>
+								<li>
+									<div class="pro_tb">
+										<i class="ques">Q</i>
+										<b>你们切图如何收费？</b>
+									</div>
+									<div class="pro_bm">
+										<i class="anse">A</i>
+										<b>平均费用在1200元/套（企业站4-6个页面），但是这个并不准确。具体得提供PSD/JPG格式的设计稿给我们，我们再根据设计稿的难易程度来决定的。不按页计算也不按屏算，我们一切以工作量为参考来进行报价。</b>
+									</div>
+								</li>
+								<li>
+									<div class="pro_tb">
+										<i class="ques">Q</i>
+										<b>需要多长时间完成？</b>
+									</div>
+									<div class="pro_bm">
+										<i class="anse">A</i>
+										<b>我们平均每天出图的速度在1~7张，具体时间需要根据设计稿难易程度来进行评估。一般一个普通的企业网站整站切图时间在2天左右。</b>
+									</div>
+								</li>
+								<li>
+									<div class="pro_tb">
+										<i class="ques">Q</i>
+										<b>会兼容哪些浏览器？</b>
+									</div>
+									<div class="pro_bm">
+										<i class="anse">A</i>
+										<b>我们创建的代码，根据W3C标准，基于html5文档申明规范，默认兼容ie7、8、9、10、firefox、chrome以及主流浏览器。IE6下保证不出现严重错位。</b>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!--contain2-->
+				<div class="contain2">
+					<!--服务流程-->
+					<div class="process fl">
+						<div class="ongoing_nav">
+							<h2>
+								<img src="/Public/Home/images/ico2.png" />服务流程</h2>
+						</div>
+						<div class="process_com">
+							<img src="/Public/Home/temp/pic18.png" />
+						</div>
+						<div class="process_bm">
+							<span class="fl">注：您下单时请务必留下称呼和联系方式，在开发过程中有任何问题，我们工程师将直接与您沟通确认！</span>
+							<a href="tencent://Message/?Uin=3168444267&amp;websiteName=q-zone.qq.com&amp;Menu=yes" class="fr" style="position: relative;">
+								马上咨询
+							</a>
+						</div>
+					</div>
+
+					<!--品牌客户-->
+					<div class="brand fr">
+						<div class="ongoing_nav">
+							<h2>
+								<img src="/Public/Home/images/ico2.png" />品牌客户</h2>
+						</div>
+						<div class="brand_com picLink">
+							<ul id="plQuery" class="plQuery" mod="2" key="k">
+								<li class="fr">
+									<a>
+										<img src="/Uploads/Picture/2015-11-05/563af9a3a4c19.jpg" />
+									</a>
+								</li>
+								<li class="fl">
+									<a>
+										<img src="/Uploads/Picture/2015-11-05/563afa055e196.jpg" />
+									</a>
+								</li>
+								<li class="fr">
+									<a>
+										<img src="/Uploads/Picture/2015-11-09/564038bde220e.jpg" />
+									</a>
+								</li>
+								<li class="fl">
+									<a>
+										<img src="/Uploads/Picture/2015-11-09/564037b7b53b7.jpg" />
+									</a>
+								</li>
+								<li class="fr">
+									<a>
+										<img src="/Uploads/Picture/2015-11-09/5640380bc26b0.jpg" />
+									</a>
+								</li>
+								<li class="fl">
+									<a>
+										<img src="/Uploads/Picture/2015-11-09/56403821b72e0.jpg" />
+									</a>
+								</li>
+								<li class="fr">
+									<a>
+										<img src="/Uploads/Picture/2015-11-09/5640383f66283.jpg" />
+									</a>
+								</li>
+								<li class="fl">
+									<a>
+										<img src="/Uploads/Picture/2015-11-09/564038679e52f.jpg" />
+									</a>
+								</li>
+								<li class="fr">
+									<a>
+										<img src="/Uploads/Picture/2015-11-09/5640389e30ecb.jpg" />
+									</a>
+								</li>
+								<li class="fl">
+									<a>
+										<img src="/Uploads/Picture/2015-11-09/564038e08d939.jpg" />
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--友情链接-->
+		<div class="linkWrap clearfix">
+			<div class="link_wc w1200">
+				<div class="link">
+					<h2>
+						<img src="/Public/Home/images/ico2.png" />友情链接</h2>
+					<div class="link_bm">
+						<a href="http://www.winfoc.com" target="_blank">文诚信息科技</a>
+						<a href="http://www.uehtml.com/" target="_blank">UE设计平台</a>
+						<a href="http://www.aseoe.com/" target="_blank">爱思资源网</a>
+						<a href="http://www.daqianduan.com/" target="_blank">大前端</a>
+						<a href="http://www.xiejiancong.com/" target="_blank">前端那些事儿</a>
+						<a href="http://www.topthink.com/" target="_blank">极思维</a>
+						<a href="http://www.lingdublog.com/" target="_blank">web前端开发</a>
+						<a href="http://tgideas.qq.com/" target="_blank">腾讯TGideas</a>
+						<a href="http://www.ccdol.com/" target="_blank">中国设计在线</a>
+						<a href="http://app.uehtml.com/" target="_blank">APP设计欣赏</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--bottomWrap-->
+		<div class="bottomWrap clearfix">
+			<div class="bottom_wc w1200">
+				<div class="bottomt">
+					<ul>
+						<li>
+							<div class="bm_img">
+								<img src="/Public/Home/images/ico9.png" />
+							</div>
+							<p>
+								<b>公司地址</b>
+								<span>甘肃省兰州市西站海鸿大厦C1座
+									<br />兰州文诚信息科技有限公司旗下网站</span>
+							</p>
+						</li>
+						<li>
+							<div class="bm_img">
+								<img src="/Public/Home/images/ico10.png" />
+							</div>
+							<div class="bm_wz">
+								<p>
+									<b>值班电话</b>
+									<span>0931-2235045</span>
+								</p>
+								<p>
+									<b>24h 专线</b>
+									<span>139 1991 6960</span>
+								</p>
+								<p style="font-size: 12px;">
+									(上班时间：上午8:30－下午18:00)
+								</p>
+							</div>
+						</li>
+						<li style="margin-right: 0;">
+							<div class="bm_img">
+								<img src="/Public/Home/images/ico11.png" />
+							</div>
+							<div class="bm_wz1">
+								<p>
+									<b>合作</b>
+									<span>3168444267@qq.com</span>
+								</p>
+								<p>
+									<b>反馈</b>
+									<span>501590073@qq.com</span>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="zixun">
+			<a href="tel:13919916960" class="b_zix">马上咨询</a>
+		</div>
+
+		<!--footer-->
+		<div class="footer">Copyright © 2013-2016 兰州文诚信息科技有限公司 All Rights Reserved. 陇ICP备15000200号-6&nbsp;&nbsp;
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1259458229'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1259458229%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+		</div>
+	</div>
+
+	<div class="navtop">
+		<ul>
+			<li>
+				<a href="/index.html" class="cur">首页</a>
+			</li>
+			<li>
+				<a href="/service.html">服务</a>
+			</li>
+			<li>
+				<a href="/pcase.html">案例</a>
+			</li>
+			<!--<li><a href="/lesson.html" >教程</a></li>-->
+			<li>
+				<a href="/effects.html">特效</a>
+			</li>
+			<li>
+				<a href="/question.html">问题</a>
+			</li>
+			<li>
+				<a href="/about.html">关于</a>
+			</li>
+		</ul>
+	</div>
+
+	<!--QQ浮动层-->
+	<div id="float">
+		<div class="float">
+			<ul id="side-bar" class="side-bar side-pannel">
+				<li>
+					<a href="tencent://Message/?Uin=3168444267&amp;websiteName=q-zone.qq.com&amp;Menu=yes">
+						<div class="floatbox kefu">
+							<img src="/Public/Home/images/QQ.png" />
+							<span>在线客服</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="cssBtn2">
+						<div class="floatbox chj">
+							<img src="/Public/Home/images/duanx.png" />
+							<span>问题反馈</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="cssBtn3">
+						<div class="floatbox went">
+							<img src="/Public/Home/images/zhifu.png" />
+							<span>发票受理</span>
+						</div>
+					</a>
+				</li>
+				<li style="border:none;display: none;">
+					<a href="javascript:goTop();" class="floattop gotop">
+						<img src="/Public/Home/images/top.png" />
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!--弹出层-->
+	<div id="TB_overlayBG"></div>
+	<div class="cssOlContent cssOlContent2">
+		<div class="cssCo cssCo2" style="display: block;">
+			<div class="css_sx">
+				<div class="theme-poptit">
+					<h3>问题反馈</h3>
+				</div>
+				<div class="theme-popbod dform">
+					<form name="form2" id="form2">
+						<ul>
+							<li>
+								<p>问题内容</p>
+								<textarea id="content" name="content"></textarea>
+							</li>
+							<li>
+								<p>问题附件</p>
+								<div class="add">
+									<div class="liulang" style="margin-top:8px; margin-right:3px;">
+										<input type="file" id="file_upload">
+									</div>
+									<a class="zwsj" style="margin-left:10px;">暂无附件</a>
+								</div>
+							</li>
+							<li>
+								<span class="fl">
+									<p>您的称呼</p>
+									<input id="theuser1" type="text" placeholder="姓名" name="theuser1" />
+								</span>
+								<span class="fr">
+									<p>联系方式</p>
+									<input id="thetel1" type="text" placeholder="手机号码" name="thetel1" />
+								</span>
+							</li>
+							<li>
+								<p></p>
+								<input class="submittj" type="submit" value="确认提交">
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<script>
+				$('#file_upload').uploadify({
+					'height': 25,
+					'width': 60,
+					'swf': '/Public/static/uploadify/uploadify.swf',
+					"uploader": "/Index/upload/session_id/1337lpu3sjeah8asa8gg77cqo6.html",
+					'buttonText': '浏览上传',
+					'multi': false,//允许同时上传多张图片
+					'fileTypeExts': '*.jpg; *.png; *.gif;',
+					'removeTimeout': 1,
+					"onUploadSuccess": uploadPicture,
+				});
+				var img = '';
+				var fjcount = 1;
+				function uploadPicture(file, data) {
+					//把所有上传的图片都放入DIV中
+					$_upload_item = $(".add");
+					$_upload_img = $("<a href='javascript:void(0)' class='fujian'><input type='checkbox' name='fujian' value='" + data + "' checked  style='display:none;'/>附件" + fjcount + "<img src='/Public/Home/images/close-1.png'  onclick='$(this).parent().remove();jiance();'/></a>");
+					$_upload_item.append($_upload_img);
+					if (fjcount == 1) {
+						$(".zwsj").fadeOut(300);
+					}
+					fjcount = fjcount + 1;
+					if ($("input[name='fujian']").length > 3) {
+						$('#file_upload').uploadify('disable', true);
+					}
+				}
+				function jiance() {
+					if ($("input[name='fujian']").length == 0) {
+						$(".zwsj").fadeIn(300);
+						fjcount = 1;
+					}
+					if ($("input[name='fujian']").length < 4) {
+						$('#file_upload').uploadify('disable', false);
+					}
+				}
+			</script>
+			<div class="tjcg">
+				<div class="theme-poptit">
+					<h3>提交成功</h3>
+				</div>
+				<div class="chenggong">
+					<div class="cg_tb">
+						<img src="/Public/Home/images/ico12.png" />
+						<p>您的问题已成功提交，我们工作人员将于1个工作日之内与您联系处理。
+							<br/>谢谢您的支持！</p>
+					</div>
+					<div class="cg_bm">
+						<a href="/index/index.html" class="fhsy">返回首页</a>
+						<a href="javascript:void(0)" class="jxll">继续浏览</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="closeCo">
+			<a href="javascript:void(0)" class="guangbi">
+				<img src="/Public/Home/images/close.png" />
+			</a>
+		</div>
+	</div>
+
+	<div id="TB_overlayBG1"></div>
+	<div class="cssOlContent cssOlContent3">
+		<div class="cssCo cssCo3" style="display: block;">
+			<div class="css_sx1">
+				<div class="theme-poptit">
+					<h3>发票受理</h3>
+				</div>
+				<div class="hbox_ml">
+					<form name="form1" id="form1">
+						<ul>
+							<li>
+								<p>发票抬头</p>
+								<input id="taitou" type="text" placeholder="贵公司名称" name="taitou" />
+							</li>
+							<li>
+								<p>邮寄地址</p>
+								<input id="address" type="text" placeholder="请填写您的收件地址" name="address" />
+							</li>
+							<li>
+								<span class="fl">
+									<p>项目金额</p>
+									<input class="jine" id="jine" type="text" name="jine" />
+									<i class="yuan">元</i>
+								</span>
+								<span class="fr frzuo">
+									<p>快递选择</p>
+									<dl class="select">
+										<dt>顺丰快递</dt>
+										<dd>
+											<ul>
+												<li>
+													<a href="javascript:void(0);" value="1">顺丰快递</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);" value="2">韵达快递</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);" value="3">申通快递</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);" value="4">EMS</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);" value="5" style="border-bottom: none;">圆通快递</a>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+									<input type="hidden" name="kuaidi" id="kuaidi" value="1" />
+								</span>
+							</li>
+							<li>
+								<span class="fl">
+									<p>收件人</p>
+									<input id="theuser" type="text" placeholder="姓名" name="theuser" />
+								</span>
+								<span class="fr frzuo">
+									<p>联系方式</p>
+									<input id="thetel" class="yzm" type="text" placeholder="手机号码" name="thetel" />
+								</span>
+							</li>
+							<li>
+								<p>备注信息</p>
+								<textarea id="beizhu" name="beizhu"></textarea>
+							</li>
+							<li>
+								<p></p>
+								<div>
+									<input class="sure anniu" type="submit" value="确定">
+									<input name="重置" type="reset" class="chongzhi anniu" value="重置">
+								</div>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<div class="tjcg1">
+				<div class="theme-poptit">
+					<h3>提交成功</h3>
+				</div>
+				<div class="chenggong">
+					<div class="cg_tb">
+						<img src="/Public/Home/images/ico12.png" />
+						<p>您的发票受理请求已成功提交，我们工作人员将于1个工作日之内与您联系处理。
+							<br/>谢谢您的支持！</p>
+					</div>
+					<div class="cg_bm">
+						<a href="/index/index.html" class="fhsy">返回首页</a>
+						<a href="javascript:void(0)" class="jxl2">继续浏览</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="closeCo">
+			<a href="javascript:void(0)" class="guangbi">
+				<img src="/Public/Home/images/close.png" />
+			</a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var ary = location.href.split("&");
+		jQuery(".txtScroll-top").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "topLoop", autoPlay: true, vis: 10 });
+		jQuery(".slideBox").slide({ mainCell: ".bd ul", effect: "fold", autoPlay: true });
+	</script>
+
+	<script id="jsID" type="text/javascript"> 
+		//下拉
+		$(function () {
+			$(".select").each(function () {
+				var s = $(this);
+				var z = parseInt(s.css / ("z-index"));
+				var dt = $(this).children("dt");
+				var dd = $(this).children("dd");
+				var _show = function () { dd.slideDown(200); dt.addClass("cur"); s.css / ("z-index", z + 1); };   //展开效果
+				var _hide = function () { dd.slideUp(200); dt.removeClass("cur"); s.css / ("z-index", z); };    //关闭效果
+				dt.click(function () { dd.is(":hidden") ? _show() : _hide(); });
+				dd.find("a").click(function () { dt.html($(this).html()); _hide(); form1.kuaidi.value = $(this).attr("value"); });     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
+				$("body").click(function (i) { !$(i.target).parents(".select").first().is(s) ? _hide() : ""; });
+			})
+		})
+	</script>
+</body>
+
+</html>
